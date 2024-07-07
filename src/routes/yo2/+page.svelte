@@ -1,5 +1,5 @@
 <script>
-  import Space from "/src/components/space.svelte";
+  import Space from "@components/space.svelte";
   let count = 0;
 </script>
 

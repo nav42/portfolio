@@ -1,10 +1,8 @@
 <!-- routes/+page.svelte -->
 <script>
-  import Space from "../components/Space.svelte";
-  import Header from "../components/Header.svelte";
+  import Space from "@components/Space.svelte";
 </script>
 
-<Header />
 <div class="space-container">
   <Space url='https://prod.spline.design/uS6VcJEWnW9yqohD/scene.splinecode'/>
 </div>  
