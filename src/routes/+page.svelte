@@ -1,6 +1,6 @@
 <!-- routes/+page.svelte -->
 <script>
-  import Space from "/src/components/Space.svelte";
+  import Space from "src/components/Space.svelte";
 </script>
 
 <div class="space-container">
