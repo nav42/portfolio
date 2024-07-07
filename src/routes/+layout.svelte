@@ -1,16 +1,15 @@
-<!-- src/routes/__layout.svelte or src/routes/layout.svelte -->
+<!-- src/routes/+layout.svelte -->
 <script>
-  import Header from '../components/header.svelte';
+  import Header from '../components/Header.svelte';
 </script>
 
-
-
+<Header />
 <main>
   <slot></slot>
 </main>
 
 <style global>
-  html, main {
+  :global(body) {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -23,3 +22,4 @@
     box-sizing: inherit;
   }
 </style>
+
