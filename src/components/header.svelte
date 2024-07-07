@@ -1,35 +1,14 @@
 <!-- components/header.svelte-->
 <script>
-  import { page } from "$app/stores";
+  import { base } from '$app/paths';
 
-  let current_path;
-  function rstrip(text, pattern) {
-    let regex = new RegExp(pattern + "$");
-    return text.replace(regex, "");
-  }
 
-  function lstrip(text, pattern) {
-    let regex = new RegExp("^" + pattern);
-    return text.replace(regex, "");
-  }
-
-  function strip(text, pattern) {
-    let r = rstrip(text, pattern);
-    return lstrip(r, pattern);
-  }
-  $: current_path = strip($page.url.pathname, "/");
 </script>
 
 <header>
   <nav>
-    <a
-      aria-current={current_path.startsWith("yo") ? "page" : undefined}
-      href="/yo">yo</a
-    >
-    <a
-      aria-current={current_path.startsWith("yo2") ? "page" : undefined}
-      href="/yo2">yo2</a
-    >
+    <a href="{base}/yo">yo</a>
+    <a href="{base}/yo2">yo2</a>
   </nav>
 </header>
 
