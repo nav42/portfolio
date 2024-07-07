@@ -1,6 +1,6 @@
 <!-- src/routes/+layout.svelte -->
 <script>
-  import Header from '@components/Header.svelte';
+  import Header from '@components/header.svelte';
 </script>
 
 <Header />
