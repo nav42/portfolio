@@ -1,11 +1,22 @@
+<!-- routes/+page.svelte -->
 <script>
-  let count = 0;
+  import Space from "../components/Space.svelte";
+  import Header from "../components/Header.svelte";
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<Header />
+<div class="space-container">
+  <Space url='https://prod.spline.design/uS6VcJEWnW9yqohD/scene.splinecode'/>
+</div>  
 
-<h1> NAVV : {count}</h1>
-<button on:click={() => count += 1}>Increment</button>
-<button on:click={() => count -= 1}>Decrement</button>
+<style>
+  .space-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+</style>
+
 
